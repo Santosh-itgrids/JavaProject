@@ -8,7 +8,7 @@ import com.test.service.impl.ProductService;
 public class Publish {
 
 	public static void main(String[] args) {
-		//This is publisher class,which will expose or publish soap webservice
+		//This is publisher class,which will expose or publish soap web service
 		Endpoint.publish("http://localhost:8071/product", new ProductService());
 		Endpoint.publish("http://localhost:8072/employee", new EmployeeService());
 		System.out.println("Done");
